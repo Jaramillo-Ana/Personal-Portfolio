@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Ana Jaramillo</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="involvement.html">Involvement</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="generic.html">Experience</a></li>
+							<li><a href="elements.html">Resume</a></li>
+							<li><a href="elements.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Autonomous Robot</h1>
+							<div class="box alt">
+								<div class="row gtr-uniform">
+								  <div class="col-4"><span class="image fit"><img src="images/me129_1.png" alt="" /></span></div>
+								  <div class="col-4"><span class="image fit"><img src="images/me129_2.jpg" alt="" /></span></div>
+								  <div class="col-4"><span class="image fit"><img src="images/me129_3.png" alt="" /></span></div>
+								</div>
+							  </div>
+							<p>Required Robot Hardware</p>
+							<ul>
+								<li>Drivetrain Assembly with two DC motors</li>
+								<li>Two wheels and one passive wheel</li>
+								<li>Small L298 Driver</li>
+								<li>Raspberry Pi</li>
+								<li>IR Sensors </li>
+								<li>Ultrasonic Sensors - triple sensor configuration</li>
+								<li>Magnetometer</li>
+								<li>Electromagnet</li>
+								<li>Electromagnet</li>
+								<li>One external rechargeable batter</li>	
+							</ul>
+							<p>This project involved implementing an autonomous navigation system using Python for a robot operating in a Manhattan-style grid environment. The system integrated real-time sensors(IR, ultrasound, and magnetometer), path planning, and real-time obstacle avoidance to safely explore the unknown grid-based map.</p>
+							<p>To handle real-time decision making, path planning, and error recovery, we integrated a multi-threaded software. The multi-threated software resulted in a code architecture including the following threads:</p>
+							<ol>
+								<li>Navigation Thread</li>
+								<li>Sensor Reading and interpretation thread</li>
+								<li>Graph/Map Thread (using matplotlib)</li>
+								<li>ROS Communication Thread - for remote operation</li>
+
+		
+							</ol>
+							<p>This logic allowed for successful goal-directed navigation, robot exploration, replanning. As the robot navigated or explored, it constructed a map of its environment, planned efficient routes to goals, and switched seamlessly between manual and autonomous control.</p>
+							<p>Some of the key technical components include:</p>
+							<ul>
+								<li>Line following [Navigation] which allowed for line detecting and intersection recognition.</li>
+								<li>Obstacle avoidance which prevented running into obstacles and signaled for replanning when necessary.</li>
+								<li>Dijkstra-Based exploration which allowed for optimal path detection</li>
+							</ul>
+							<p>At the end, the robot demonstrated navigating accuracy, successful obstacle handling, efficient exploration, and robust system reliability.</p>
+					</div>
+	
+					<section style="margin-top: 2rem; text-align: center;">
+						<a href="projects.html" class="button primary">Projects</a>
+					</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
